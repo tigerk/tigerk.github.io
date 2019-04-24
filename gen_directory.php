@@ -15,12 +15,17 @@ $subfolder = array_diff(scandir($docdir), array('.', '..'));
 
 $content = "";
 foreach ($subfolder as $f) {
-    $filedir  = rtrim($docdir, "/") . '/' . $f;
+    $filedir = rtrim($docdir, "/") . '/' . $f;
+
+    if (!is_dir($filedir)) {
+        continue;
+    }
+
     $tmpfiles = array_diff(scandir($filedir), array('.', '..'));
 
     $content .= "### [{$f}]({$filedir})\n";
     foreach ($tmpfiles as $file) {
-        $content .= sprintf("- [%s](%s)\n", rtrim($file, ".md"), urlencode($filedir . "/{$file}"));
+        $content .= sprintf("- [%s](%s)\n", rtrim($file, ".md"), $filedir . "/" . urlencode($file));
     }
 }
 
