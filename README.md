@@ -13,7 +13,7 @@
 - [JVM内存模型，GC机制和原理；GC分哪两种；什么时候会触发Full GC？](docs/java基础/JVM内存模型，GC机制和原理；GC分哪两种；什么时候会触发Full GC？.md)
 - [JVM虚拟机内存划分、类加载器、垃圾收集算法、垃圾收集器、class文件结构是如何解析的](docs/java基础/JVM虚拟机内存划分、类加载器、垃圾收集算法、垃圾收集器、class文件结构是如何解析的.md)
 - [JVM里的有几种classloader，为什么会有多种？](docs/java基础/JVM里的有几种classloader，为什么会有多种？.md)
-- [List和Map区别，Arraylist与LinkedList区别，ArrayList与Vector 区别](docs/java基础/List和Map区别，Arraylist与LinkedList区别，ArrayList与Vector 区别.md)
+- [List和Map区别，Arraylist与LinkedList区别，ArrayList与Vector 区别](docs/java基础/List和Map区别，Arraylist与LinkedList区别，ArrayList与Vector区别.md)
 - [synchronized、volatile区别、synchronized锁粒度、模拟死锁场景、原子性与可见性](docs/java基础/synchronized、volatile区别、synchronized锁粒度、模拟死锁场景、原子性与可见性.md)
 - [中间件](docs/java基础/中间件.md)
 - [常见的JVM调优方法有哪些？可以具体到调整哪个参数，调成什么值？](docs/java基础/常见的JVM调优方法有哪些？可以具体到调整哪个参数，调成什么值？.md)
