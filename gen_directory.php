@@ -25,14 +25,14 @@ foreach ($subfolder as $f) {
 
     $content .= "### [{$f}]({$filedir})\n";
     foreach ($tmpfiles as $file) {
-        $content .= sprintf("- [%s](%s)\n", rtrim($file, ".md"), $filedir . "/" . urlencode($file));
+        $content .= sprintf("- [%s](%s)\n", rtrim($file, ".md"), $filedir . "/" . rawurlencode($file));
     }
 }
 
 $marker = "<dicrectory>";
 
 $readme       = file_get_contents("README.md");
-$finalContent = preg_replace("/<directory>.*\s+<\/directory>/u", "<directory>\n\n" . $content . "\n</directory>", $readme);
+$finalContent = preg_replace("/<directory>[\S\s]+<\/directory>/u", "<directory>\n\n" . $content . "\n</directory>", $readme);
 
 file_put_contents("README.md", $finalContent);
 
