@@ -54,12 +54,15 @@ public class MapTest {
 
 ###  那在java的HashMap的底层数据结构到底是什么样的？
 
-先看下hashmap的数据结构图
+先看下hashmap的数据结构
+
 ![hashmap的internal-structure](images/hashmap-internaldata.png)
 
 HashMap默认会生成16个容量的数组，每个bucket使用linkedlist(不是java中的Linked-List)来保存数据节点，每个节点有指向下一个节点的指针。
 
+
 还是回到刚才的demo，家看下cities的数据结构，可以很清楚的看到key="上海"的hash值是647341。也就是通过这个值在HashMap中快速的查找的
+
 ![图片](images/hashmap-debug-screen.png)
 
 
