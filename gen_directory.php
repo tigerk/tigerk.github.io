@@ -20,13 +20,13 @@ foreach ($subfolder as $f) {
 
     $content .= "### [{$f}]({$filedir})\n";
     foreach ($tmpfiles as $file) {
-        $content .= sprintf("- [%s](%s)\n", rtrim($file, ".md"), $filedir . "/{$file}");
+        $content .= sprintf("- [%s](%s)\n", rtrim($file, ".md"), urlencode($filedir . "/{$file}"));
     }
 }
 
 $marker = "<dicrectory>";
 
-$readme = file_get_contents("README.md");
+$readme       = file_get_contents("README.md");
 $finalContent = preg_replace("/<directory>.*\s+<\/directory>/u", "<directory>\n\n" . $content . "\n</directory>", $readme);
 
 file_put_contents("README.md", $finalContent);
