@@ -25,6 +25,10 @@ foreach ($subfolder as $f) {
 
     $content .= "### [{$f}]({$filedir})\n";
     foreach ($tmpfiles as $file) {
+        if ($file == "images") {
+            continue;
+        }
+
         $content .= sprintf("- [%s](%s)\n", rtrim($file, ".md"), $filedir . "/" . rawurlencode($file));
     }
 }
