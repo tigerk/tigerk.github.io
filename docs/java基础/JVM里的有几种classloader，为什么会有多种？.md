@@ -85,7 +85,7 @@ BootstrapClassLoader、ExtClassLoader、AppClassLoader实际是查阅相应的�
 
 具体流程如下：
 
-![](/Users/tigerkim/Projects/jinhuayun-programming-knowledge/docs/java基础/images/classloader1.png)
+![](docs/java基础/images/classloader1.png)
 
 
 
