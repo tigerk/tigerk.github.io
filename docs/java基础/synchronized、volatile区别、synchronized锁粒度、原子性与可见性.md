@@ -34,16 +34,16 @@ Java语言是支持多线程的，为了解决线程并发的问题，在语言�
 
 使用 busy 来防止thread执行，busy也没有使用锁来保护。
 
-```
-    while (busy) {
-          /* do something else */
-      }
+```java
+while (busy) {
+	/* do something else */
+}
 ```
 
 其他thread变更了busy的状态，但是thread仍然会继续执行
 
-```
-    busy = 0;
+```java
+busy = 0;
 ```
 
 由于thread频繁访问，编译器会将busy放在寄存器中来优化，然后从寄存器读取而不读取内存中的busy值。 测试线程永远不会看到busy更新，而另一个线程只会更改内存中busy的值，从而导致死锁。 将busy标志声明为volatile会强制在每次测试之前读取其值。
