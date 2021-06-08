@@ -4,6 +4,7 @@
 
 <directory>
 
+## Java
 ### [java基础](docs/java-basic)
 - [GC机制和原理；GC分哪两种；什么时候会触发Full GC？](docs/java/java-basic/gc-mechanism-and-principle.md)
 - [HashMap内部的数据结构是什么？底层是怎么实现的？](docs/java/java-basic/java-hashmap.md)
@@ -24,6 +25,8 @@
 - [Spring Cloud对比下Dubbo，什么场景下该使用Spring Cloud？](docs/java/java中间件/Spring%20Cloud%E5%AF%B9%E6%AF%94%E4%B8%8BDubbo%EF%BC%8C%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%B8%8B%E8%AF%A5%E4%BD%BF%E7%94%A8Spring%20Cloud%EF%BC%9F.md)
 - [消息中间件如何保证消息的一致性和如何进行消息的重试机制？](docs/java/java中间件/%E6%B6%88%E6%81%AF%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E7%9A%84%E4%B8%80%E8%87%B4%E6%80%A7%E5%92%8C%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%B6%88%E6%81%AF%E7%9A%84%E9%87%8D%E8%AF%95%E6%9C%BA%E5%88%B6%EF%BC%9F.md)
 
+
+## 分布式
 ### [分布式锁](docs/java/distributed-lock)
 - [Redis的分布式锁官方算法](docs/java/distributed-lock/redis.md)
 - [zookeeper的分布式锁方案](docs/java/distributed-lock/zookeeper.md)
