@@ -2,7 +2,7 @@
 
 ​       内存主要被分为三块：**新生代（Youn Generation）、旧生代（Old Generation）、持久代（Permanent Generation）**。三代的特点不同，造就了他们使用的GC算法不同，新生代适合生命周期较短，快速创建和销毁的对象，旧生代适合生命周期较长的对象，持久代在Sun Hotpot虚拟机中就是指方法区（有些JVM根本就没有持久代这一说法）。
 
-![image.png](/Users/tigerkim/Projects/jinhuayun-programming-knowledge/docs/java%E5%9F%BA%E7%A1%80/images/image-20190326101652634.png)
+![image.png](images/image-20190326101652634.png)
 
 
 
