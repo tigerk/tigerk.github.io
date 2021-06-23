@@ -1,9 +1,11 @@
-### ArrayList、Vector和LinkedList三个容易比较混淆，他们之间有啥具体的区别？CopyOnWriteArrayList又是什么？
+### ArrayList、Vector和LinkedList
+ArrayList、Vector和LinkedList三个容易比较混淆，他们之间有啥具体的区别？
 
+CopyOnWriteArrayList又是什么？
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-首先都实现了List接口，可以看下图
+首先，都实现了List接口，可以看下图
 
 ![](images/list-interface.jpg)
 
