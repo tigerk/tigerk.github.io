@@ -76,7 +76,7 @@ class ProcessingThread implements Runnable {
 
 
 
-#### Synchronized是最常用、最简单的方式
+- Synchronized是最常用、最简单的方式
 
 ```java
 synchronized (this) {

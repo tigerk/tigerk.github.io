@@ -95,7 +95,7 @@ BootstrapClassLoader、ExtClassLoader、AppClassLoader实际是查阅相应的�
 
 java支持使用自定义的ClassLoader。
 
-#### 自定义步骤
+- 自定义步骤
 
 1. 编写一个类继承自ClassLoader抽象类。
 2. 复写它的`findClass()`方法。
