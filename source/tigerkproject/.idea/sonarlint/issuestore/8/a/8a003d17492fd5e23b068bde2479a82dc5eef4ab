@@ -1,0 +1,16 @@
+
+0
+java:S1220""Move this file to a named package.
+t
+java:S2142$"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(³°‰à
+U	java:S106("9Replace this use of System.out or System.err by a logger.(¸ğí°8ˆ®Ù§/
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(ÊÚüí8»¾¯Ù§/
+{
+java:S2142<"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ñ¹”Ù§/
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(ù‚ëŸ8•Ü³Ù§/
+{
+java:S2142S"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8©í–Ù§/
+Z	java:S106["9Replace this use of System.out or System.err by a logger.(Õ˜–úÿÿÿÿ8´é¶Ù§/
+{
+java:S2142b"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8…Ì›Ù§/

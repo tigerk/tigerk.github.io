@@ -79,7 +79,7 @@ BootstrapClassLoader、ExtClassLoader、AppClassLoader实际是查阅相应的�
 
 
 
-是使用***双亲委托模型***的；
+是使用**双亲委托模型**的；
 
 一个类加载器查找class和resource时，是通过“委托模式”进行的，它首先判断这个class是不是已经加载成功，如果没有的话它并不是自己进行查找，而是先通过父加载器，然后递归下去，直到Bootstrap ClassLoader，如果Bootstrap classloader找到了，直接返回，如果没有找到，则一级一级返回，最后到达自身去查找这些对象。这种机制就叫做双亲委托。
 
