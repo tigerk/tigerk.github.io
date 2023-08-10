@@ -24,8 +24,8 @@
 
 ## 分布式
 ### 分布式锁
-- [Redis的分布式锁官方算法](docs/java/distributed-lock/redis.md)
-- [zookeeper的分布式锁方案](docs/java/distributed-lock/zookeeper.md)
+- [Redis的分布式锁官方算法](docs/distributed-lock/redis.md)
+- [zookeeper的分布式锁方案](docs/distributed-lock/zookeeper.md)
 
 
 ---
