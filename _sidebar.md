@@ -13,6 +13,9 @@
     - [线程池是什么，为什么创建多线程？](docs/java/java-multi-thread/java-thread-pool-mechanism.md)
     - [讲讲线程的生命周期](docs/java/java-multi-thread/java-thread-life-circle.md)
 
+- redis
+    - [Redis持久化-AOF重写机制](docs/redis/redis-aof-rewrite.md)
+
 - 分布式锁
     - [Redis的分布式锁官方算法](docs/distributed-lock/redis.md)
     - [zookeeper的分布式锁方案](docs/distributed-lock/zookeeper.md)
