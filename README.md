@@ -1,7 +1,5 @@
 # 知识
-本系列知识源自网络以及手动实践，整理的目的是因为想做一个可分享的知识沉淀；
-
-> 俗话说，好记性不如烂笔头。记录下来也方便查看
+本系列知识源自网络以及实践；俗话说，**好记性不如烂笔头。记录下来也方便查看**
 
 <directory>
 
@@ -10,7 +8,7 @@
 
 - [GC机制和原理；GC分哪两种；什么时候会触发Full GC？](docs/java/java-basic/gc-mechanism-and-principle.md)
 - [HashMap内部的数据结构是什么？底层是怎么实现的？](docs/java/java-basic/java-hashmap.md)
-- [JVM虚拟机内存划分、类加载器、垃圾收集算法、垃圾收集器、class文件结构是如何解析的](docs/java/java-basic/jvm-memory-classloader-gc-class-structure.md)
+<!-- - [JVM虚拟机内存划分、类加载器、垃圾收集算法、垃圾收集器、class文件结构是如何解析的](docs/java/java-basic/jvm-memory-classloader-gc-class-structure.md) -->
 - [JVM里的有几种classloader，为什么会有多种？](docs/java/java-basic/jvm-classloader.md)
 - [Java常用List，Arraylist、LinkedList、Vector以及CopyOnWriteArrayList](docs/java/java-basic/Java-List-Arraylist-LinkedList-Vector-CopyOnWriteArrayList.md)
 - [synchronized、volatile区别、synchronized锁粒度、原子性与可见性](docs/java/java-basic/java-synchronized-volatile.md)
@@ -22,13 +20,13 @@
 - [线程池是什么，为什么创建多线程？](docs/java/java-multi-thread/java-thread-pool-mechanism.md)
 - [讲讲线程的生命周期](docs/java/java-multi-thread/java-thread-life-circle.md)
 
-## 分布式
+### Redis
+- [Redis持久化-AOF重写机制](docs/redis/redis-aof-rewrite.md)
+
 ### 分布式锁
 - [Redis的分布式锁官方算法](docs/distributed-lock/redis.md)
 - [zookeeper的分布式锁方案](docs/distributed-lock/zookeeper.md)
 
-
----
-## 读书笔记
-- [极客与团队](docs/read-books/geeksAndTeam.md)
+## leetcode
+- [15. 三数之和](docs/leetcode/threesum.md)
 </directory>

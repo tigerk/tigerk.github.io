@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -8,17 +9,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+<style>
+  .sidebar ul li a {
+    overflow: auto !important;
+    text-overflow: initial !important;
+    white-space: normal !important;
+  }
+</style>
+
 <body>
+  <nav>
+    <a href="#">封面</a>
+    <a href="#/README">首页</a>
+  </nav>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: '技术栈的知识点扫盲 🐶 👽 👺 👻',
       repo: 'https://github.com/tigerk/knowledge',
       coverpage: true,
-      loadSidebar: false
+      loadSidebar: true,
+      loadNavbar: true
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
+
 </html>
