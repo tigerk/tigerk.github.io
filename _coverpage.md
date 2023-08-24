@@ -5,6 +5,7 @@
 - 我们不生产知识，只是知识的搬运工
 - 好记性不如烂笔头
 
+> 本系列知识源自网络 & 实践
 
 <!-- [![stars](https://badgen.net/github/stars/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/tigerk/tigerk-programming-knowledge) [![forks](https://badgen.net/github/forks/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/tigerk/tigerk-programming-knowledge) -->
 
