@@ -23,3 +23,4 @@
 - leetcode
     - [15. 三数之和](docs/leetcode/threesum.md)
     - [5. 最长回文子串](docs/leetcode/最长回文子串.md)
+    - [22. 括号生成](docs/leetcode/括号生成.md)
