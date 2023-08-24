@@ -35,4 +35,8 @@
 - [5. 最长回文子串](docs/leetcode/最长回文子串.md)
 - [22. 括号生成](docs/leetcode/括号生成.md)
 - [234. 回文链表](docs/leetcode/回文链表.md)
+
+## 读书笔记
+- [卓有成效的管理者](docs/books/卓有成效的管理者.md)
+
 </directory>
