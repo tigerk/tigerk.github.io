@@ -28,7 +28,8 @@
 - [zookeeper的分布式锁方案](docs/distributed-lock/zookeeper.md)
 
 ## leetcode
-所有代码都在repo中的coding项目中，所有代码都可以跑起来
+所有代码都在代码库的coding项目中，所有代码都可以跑起来
+> https://github.com/tigerk/tigerk.github.io
 
 - [15. 三数之和](docs/leetcode/threesum.md)
 - [5. 最长回文子串](docs/leetcode/最长回文子串.md)
