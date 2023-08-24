@@ -1,4 +1,4 @@
-# 三数之和
+# 15. 三数之和
 leetcode：https://leetcode.cn/problems/3sum/
 
 ## 题目：

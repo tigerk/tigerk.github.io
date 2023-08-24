@@ -1,0 +1,66 @@
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
+ * 示例 1：
+ * <p>
+ * 输入：n = 3
+ * 输出：["((()))","(()())","(())()","()(())","()()()"]
+ * 示例 2：
+ * <p>
+ * 输入：n = 1
+ * 输出：["()"]
+ */
+
+public class LeetCode_22 {
+    public static void main(String[] args) {
+        LeetCode_22 leetCode22 = new LeetCode_22();
+
+        List<String> strings = leetCode22.generateParenthesis(3);
+        System.out.println(strings);
+    }
+
+    public List<String> generateParenthesis(int n) {
+        List<String> result = new ArrayList<>();
+
+        if (n <= 0) {
+            return result;
+        }
+
+        gen(result, "", 0, 0, n);
+
+        return result;
+    }
+
+    /**
+     *
+     * @param result 最终返回的数组列表。
+     * @param str 每次递归时，添加括号到字符串中
+     * @param left 每次递归时左括号数量
+     * @param right 每次递归时右括号数量
+     * @param n 括号的对数
+     */
+    private void gen(List<String> result, String str, int left, int right, int n) {
+        // 当生成的字符串中，使用的左括号，右括号与n相等时，说明生成的字符串是合法的，添加到数组中。
+        if (right == left && left == n) {
+            result.add(str);
+            return;
+        }
+        // 当左括号数量多余右括号时，添加左右括号都可以
+        if (left > right) {
+            // 只有当左括号还有剩余时，才能添加左括号。
+            if (left < n) {
+                gen(result, str + "(", left + 1, right, n);
+            }
+            // 追加右括号时，进行递归
+            gen(result, str + ")", left, right + 1, n);
+        }
+        // 因为字符串中左括号数量 > 右括号数量，所以当左括号 == 右括号时，只能追加左括号
+        else if (left == right) {
+            gen(result, str + "(", left + 1, right, n);
+        }
+    }
+}
