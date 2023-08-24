@@ -5,27 +5,30 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * 15. 三数之和
+ * https://leetcode.cn/problems/3sum/
+ *
+ *  <p>
  * 给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请
  * 你返回所有和为 0 且不重复的三元组。
  * 注意：答案中不可以包含重复的三元组。
- * leetcode
- * https://leetcode.cn/problems/3sum/
+ * <p>
  * 解题思路：
  * 思路就是四个字：定一找二
  * 排序 + 双指针
  */
-public class ThreeSum {
+public class LeetCode_15 {
     public static void main(String[] args) {
         int[] test1 = {-4, -1, -1, 0, 1, 2};
-        List<List<Integer>> result1 = ThreeSum.threeSum(test1);
+        List<List<Integer>> result1 = LeetCode_15.threeSum(test1);
         System.out.println(result1);
 //
 //        int[] test2 = {0, 1, 1};
-//        List<List<Integer>> result2 = ThreeSum.threeSum(test2);
+//        List<List<Integer>> result2 = LeetCode_15.threeSum(test2);
 //        System.out.println(result2);
 
 //        int[] test3 = {1, -1, -1, 0};
-//        List<List<Integer>> result3 = ThreeSum.threeSum(test3);
+//        List<List<Integer>> result3 = LeetCode_15.threeSum(test3);
 //        System.out.println(result3);
     }
 
