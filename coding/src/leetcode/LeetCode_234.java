@@ -1,0 +1,97 @@
+package leetcode;
+
+import leetcode.dependency.ListNode;
+
+/**
+ * 234. 回文链表
+ * https://leetcode.cn/problems/palindrome-linked-list/description/
+ * <p>
+ * 给你一个单链表的头节点 head ，请你判断该链表是否为回文链表。如果是，返回 true ；否则，返回 false 。
+ * <p>
+ * 示例 1：
+ * 输入：head = [1,2,2,1]
+ * 输出：true
+ * <p>
+ * 示例 2：
+ * 输入：head = [1,2]
+ * 输出：false
+ * <p>
+ * 提示：
+ * 链表中节点数目在范围[1, 105] 内
+ * 0 <= Node.val <= 9
+ */
+
+public class LeetCode_234 {
+    public static void main(String[] args) {
+        ListNode node4 = new ListNode(1);
+        ListNode node3 = new ListNode(2, node4);
+//        ListNode node2 = new ListNode(2, node3);
+//        ListNode node1 = new ListNode(1, node2);
+        ListNode head = new ListNode();
+        head.next = node3;
+
+        LeetCode_234 leetCode234 = new LeetCode_234();
+        boolean palindrome = leetCode234.isPalindrome(head);
+
+        System.out.println(palindrome);
+    }
+
+    /**
+     * 解题思路：使用快慢指针 + 反转
+     *
+     * @param head 头指针
+     * @return 是否是回文链表
+     */
+    public boolean isPalindrome(ListNode head) {
+        if (head == null) {
+            return true;
+        }
+
+        // 使用快慢指针找到中间节点
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // 反转后半段链表
+        ListNode halfHead = reverseList(slow.next);
+
+        // 使用循环判断是否相等来前半段和后半段是不是一样的
+        // 使用result来记录结果，记录后，将后半段链表进行恢复。
+        ListNode p1 = head;
+        ListNode p2 = halfHead;
+        boolean result = true;
+        while (result && p1 != null && p2 != null) {
+            if (p1.val != p2.val) {
+                result = false;
+            }
+
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+
+        slow.next = reverseList(halfHead);
+
+        return result;
+    }
+
+    /**
+     * 链表反转
+     * @param head 头节点
+     * @return 返回反转后的头节点
+     */
+    private ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode cur = head;
+        while (cur != null) {
+            ListNode next = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = next;
+        }
+
+        return prev;
+    }
+}
