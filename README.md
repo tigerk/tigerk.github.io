@@ -1,9 +1,8 @@
-# 知识
-本系列知识源自网络以及实践；俗话说，**好记性不如烂笔头。记录下来也方便查看**
+# 技术栈的知识点扫盲 🐶 👽 👺 👻
+本系列知识源自网络以及实践。
 
-<directory>
+**好记性不如烂笔头。记录下来也方便查看**
 
-## Java
 ### java基础
 
 - [GC机制和原理；GC分哪两种；什么时候会触发Full GC？](docs/java/java-basic/gc-mechanism-and-principle.md)
@@ -15,7 +14,11 @@
 - [什么是JVM内存模型](docs/java/java-basic/jvm-memory-module.md)
 - [常见的JVM调优方法有哪些？可以具体到调整哪个参数，调成什么值？](docs/java/java-basic/jvm-args-optimization.md)
 - [说说反射的用途及实现](docs/java/java-basic/java-reflection-realization.md)
+
+
+
 ### java多线程
+
 - [什么是线程安全，如何实现线程安全？](docs/java/java-multi-thread/java-thread-safe.md)
 - [线程池是什么，为什么创建多线程？](docs/java/java-multi-thread/java-thread-pool-mechanism.md)
 - [讲讲线程的生命周期](docs/java/java-multi-thread/java-thread-life-circle.md)
@@ -27,7 +30,10 @@
 - [Redis的分布式锁官方算法](docs/distributed-lock/redis.md)
 - [zookeeper的分布式锁方案](docs/distributed-lock/zookeeper.md)
 
-## leetcode
+
+
+### leetcode
+
 所有代码都在代码库的coding项目中，所有代码都可以跑起来
 > https://github.com/tigerk/tigerk.github.io
 
@@ -36,7 +42,5 @@
 - [22. 括号生成](docs/leetcode/括号生成.md)
 - [234. 回文链表](docs/leetcode/回文链表.md)
 
-## 读书笔记
+### 读书笔记
 - [卓有成效的管理者](docs/books/卓有成效的管理者.md)
-
-</directory>
